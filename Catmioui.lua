@@ -661,7 +661,7 @@ local function ShowLoadingScreen(onComplete)
         while animationRunning do
             for _, trail in ipairs(trails) do
                 local newWidth = trail.config.width + math.random(-12, 12)
-                TweenService:Create(trail.frame, TweenInfo.new(0.12, Enum.EasingStyle.Quad), {Size = UDim2.new(0, newWidth, 0, mobile and 2 or 3), BackgroundTransparency = 0.1 + math.random() * 0.3}):Play()
+                TweenService:Create(trail.frame, TweenInfo.new(0.12, Enum.EasingStyle.Quad), {Size = UDim2.new(0, newWidth, 0, mobile and 2 or 3), BackgroundTransparency = 0.1 + math.random() * 0.2}):Play()
             end
             task.wait(0.1)
         end
