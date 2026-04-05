@@ -42,7 +42,7 @@ local Arqel = {}
 Arqel.Appearance = {
     Title = "Arqel",
     Subtitle = "Enter your key to continue",
-    Icon = "rbxassetid://10670510726",
+    Icon = "rbxassetid://318455019", -- cat icon
     IconSize = UDim2.new(0, 30, 0, 30)
 }
 
@@ -160,6 +160,7 @@ local CachedIcons = {}
 local FolderName = "Arqel"
 local IconsFolder = "Icons"
 local DefaultLogoAsset = "rbxassetid://10670510726"
+local CatIconAsset = "rbxassetid://318455019"
 
 local function isMobile()
     return UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
@@ -245,6 +246,9 @@ local function downloadIcon(iconName)
 end
 
 local function getIcon(iconName)
+    if iconName == "loading" then
+        return CatIconAsset
+    end
     return CachedIcons[iconName] or FallbackIcons[iconName]
 end
 
