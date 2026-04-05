@@ -147,7 +147,7 @@ local FallbackIcons = {
     discord = "rbxassetid://83278450537116",
     alert = "rbxassetid://140438367956051",
     lock = "rbxassetid://114355063515473",
-    loading = "rbxassetid://116535712789945",
+    loading = "rbxassetid://10670510726",
     close = "rbxassetid://6022668916",
     changelog = "rbxassetid://138133190015277",
     logo = "rbxassetid://95721401302279",
@@ -159,7 +159,7 @@ local FallbackIcons = {
 local CachedIcons = {}
 local FolderName = "Arqel"
 local IconsFolder = "Icons"
-local DefaultLogoAsset = "rbxassetid://95721401302279"
+local DefaultLogoAsset = "rbxassetid://10670510726"
 
 local function isMobile()
     return UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
