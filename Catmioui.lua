@@ -42,7 +42,7 @@ local Arqel = {}
 Arqel.Appearance = {
     Title = "Arqel",
     Subtitle = "Enter your key to continue",
-    Icon = "rbxassetid://95721401302279",
+    Icon = "rbxassetid://10670510726",
     IconSize = UDim2.new(0, 30, 0, 30)
 }
 
